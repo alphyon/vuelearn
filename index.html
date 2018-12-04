@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VUE-1</title>
+</head>
+<body>
+<div id="app">
+    <h1>Iniciando con VUE</h1>
+    <h2>{{titulo}}</h2>
+
+    <ul v-for="fruta of frutas">
+        <li>
+            {{fruta.nombre}} - {{fruta.cantidad}}
+               <span v-if="fruta.cantidad === 0"> - Sin Stock</span>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="01.js"></script>
+</body>
+
+</html>

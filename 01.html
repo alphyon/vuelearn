@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VUE-1</title>
+</head>
+<body>
+<div id="app">
+    <h1>Iniciando con VUE</h1>
+    <h2>{{ title }}</h2>
+    <input type="text" v-model="testData">
+    <button v-on:click="addElement">Agregar</button>
+    <button @click="addElement">Agregar</button>
+    <ul v-for="fruit of fruits">
+        <li>
+            {{fruit.name}} - {{fruit.quantity}}
+               <span v-if="fruit.quantity === 0"> - Sin Stock</span>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="02.js"></script>
+</body>
+
+</html>
